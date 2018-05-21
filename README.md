@@ -6,3 +6,10 @@ Mozilla Firefox creates the .parentlock file in the current profile directory, e
 
 ### Is it safe?
 Yes.
+
+### Compiling and installing
+go build
+go install
+
+### Lanuch
+/path/to/firefox_parent_lock_watcher /path/to/firefox/profile.ini

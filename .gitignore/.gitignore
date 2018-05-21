@@ -1,3 +1,4 @@
 .idea
 go_build_*_go
 *_go
+firefox_parent_lock_watcher
