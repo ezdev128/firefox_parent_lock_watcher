@@ -9,6 +9,7 @@ Yes.
 
 ### Compiling and installing
 go build
+
 go install
 
 ### Lanuch
