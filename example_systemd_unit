@@ -1,0 +1,15 @@
+[Unit]
+Description=Start Firefox Parentlock Watcher
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp
+ExecStart=/usr/local/bin/firefox_parent_lock_watcher /home/PROFILENAME/.mozilla/firefox/profiles.ini &
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+User=ez
+Group=ez
+
+[Install]
+WantedBy=multi-user.target
